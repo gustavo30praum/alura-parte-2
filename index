@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Dragon Ball</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #0f172a;
+            color: #fff;
+            padding: 30px;
+        }
+
+        /* Cabeçalho */
+        .header {
+            background: linear-gradient(135deg, #000000, #7f1d1d);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        .header img {
+            width: 220px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px #ff0080;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Container do conteúdo */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Post */
+        .post {
+            margin: 30px auto;
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+
+        .post h2 {
+            color: #ff4d6d;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            color: #cbd5e1;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .content::first-letter {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ff4d6d;
+        }
+
+        .post-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255,0,128,0.5);
+        }
+
+        /* Área de Botões de Interação */
+        .botoes {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 1px solid #475569;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            cursor: pointer;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        /* Hover dos botões */
+        .btn-like:hover {
+            border-color: #22c55e;
+            color: #22c55e;
+        }
+
+        .btn-dislike:hover {
+            border-color: #ef4444;
+            color: #ef4444;
+        }
+
+        /* Estilos ativos quando clicados */
+        button.like-ativo {
+            background-color: #22c55e;
+            border-color: #22c55e;
+            color: #0f172a;
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+        }
+
+        button.dislike-ativo {
+            background-color: #ef4444;
+            border-color: #ef4444;
+            color: #0f172a;
+            box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO CORRIGIDO COM LINK FUNCIONAL E DESCRIÇÃO -->
+    <header class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvMwZFuDCxglkSAWU3cllXwQbKtuUqQ0PfZQ&s" alt="Ilustração de Goku Black na transformação Super Saiyajin Rosé com seus marcantes cabelos espetados na cor rosa claro, olhar compenetrado focado para frente e usando um brinco Potara verde.">
+        <h1>🔥 Blog Dragon Ball</h1>
+        <p>Personagens, transformações e batalhas épicas do universo Dragon Ball</p>
+    </header>
+
+    <main>
+        <!-- PRIMEIRO POST: GUSTAVO KOGISTSKI -->
+        <article class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvMwZFuDCxglkSAWU3cllXwQbKtuUqQ0PfZQ&s" alt="Goku Black Super Saiyajin Rosé encarando fixamente o espectador." class="post-image">
+           
+            <h2>Goku Black: O Saiyajin das Trevas</h2>
+            <p class="author">Por: Gustavo Kogistski | 01/06/2026</p>
+
+            <p class="content">
+                Goku Black é um dos vilões mais marcantes de Dragon Ball Super.
+                Utilizando o corpo de Goku e um enorme poder divino, ele espalhou
+                destruição por diferentes linhas do tempo. Sua transformação
+                Rosé se tornou uma das mais populares entre os fãs devido ao
+                visual impressionante e à aura rosada característica.
+                Ao lado de Zamasu, Goku Black protagonizou uma das sagas mais
+                emocionantes da franquia, enfrentando Goku, Vegeta e Trunks
+                do Futuro em batalhas inesquecíveis.
+            </p>
+
+            <div class="botoes">
+                <button class="btn-like" aria-label="Curtir este post">👍 <span>0</span></button>
+                <button class="btn-dislike" aria-label="Não gostar deste post">👎 <span>0</span></button>
+            </div>
+        </article>
+
+        <!-- SEGUNDO POST: GUSTAVO KOGISTSKI -->
+        <article class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv7i0oADkIbEKlWbevUbGgoJY6v51wLaFLVg&s" alt="Goku em sua versão clássica de criança sorrindo alegremente montado na sua Nuvem Voadora amarela sobre um fundo de céu azul com nuvens brancas." class="post-image">
+
+            <h2>Minha Primeira Vez Assistindo Dragon Ball</h2>
+            <p class="author">Por: Gustavo Kogistski | 22/06/2026</p>
+
+            <p class="content">
+                A primeira vez que assisti Dragon Ball foi uma experiência inesquecível que me marcou para sempre. 
+                Lembro perfeitamente de ligar a televisão e dar de cara com aquela energia contagiante, a abertura icônica e os combates dinâmicos que prendiam a atenção do início ao fim. 
+                Ver personagens incríveis superando seus limites através de treinos intensos e muita determinação me fez virar fã na hora. 
+                A sensação de acompanhar cada transformação e vibrar a cada Kamehameha lançado na tela é algo que guardo com muito carinho até hoje, consolidando essa franquia como uma das minhas favoritas de todos os tempos.
+            </p>
+
+            <div class="botoes">
+                <button class="btn-like" aria-label="Curtir este post">👍 <span>0</span></button>
+                <button class="btn-dislike" aria-label="Não gostar deste post">👎 <span>0</span></button>
+            </div>
+        </article>
+    </main>
+
+    <!-- LOGICA DE LIKE / DISLIKE -->
+    <script>
+        const posts = document.querySelectorAll('.post');
+
+        posts.forEach(function (post) {
+            const btnLike = post.querySelector('.btn-like');
+            const btnDislike = post.querySelector('.btn-dislike');
+            
+            const numLikes = btnLike.querySelector('span');
+            const numDislikes = btnDislike.querySelector('span');
+
+            let curtiu = false;
+            let descurtiu = false;
+
+            btnLike.addEventListener('click', function() {
+                if (curtiu === false) {
+                    numLikes.textContent++;
+                    curtiu = true;
+                    btnLike.classList.add('like-ativo');
+
+                    if (descurtiu === true) {
+                        numDislikes.textContent--;
+                        descurtiu = false;
+                        btnDislike.classList.remove('dislike-ativo');
+                    }
+                } else {
+                    numLikes.textContent--;
+                    curtiu = false;
+                    btnLike.classList.remove('like-ativo');
+                }
+            });
+
+            btnDislike.addEventListener('click', function() {
+                if (descurtiu === false) {
+                    numDislikes.textContent++;
+                    descurtiu = true;
+                    btnDislike.classList.add('dislike-ativo');
+
+                    if (curtiu === true) {
+                        numLikes.textContent--;
+                        curtiu = false;
+                        btnLike.classList.remove('like-ativo');
+                    }
+                } else {
+                    numDislikes.textContent--;
+                    descurtiu = false;
+                    btnDislike.classList.remove('dislike-ativo');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
